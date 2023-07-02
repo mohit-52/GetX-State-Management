@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:learning_getx/screen_one.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -51,10 +52,9 @@ class _HomeScreenState extends State<HomeScreen> {
                           title: Text("Light Theme"),
                           onTap: () {
                             print("Tapped Light");
-                            Get.changeTheme(ThemeData.light(useMaterial3: true));
-                            setState(() {
-
-                            });
+                            Get.changeTheme(
+                                ThemeData.light(useMaterial3: true));
+                            setState(() {});
                           },
                         ),
                         ListTile(
@@ -63,9 +63,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           onTap: () {
                             print("Tapped Dark");
                             Get.changeTheme(ThemeData.dark(useMaterial3: true));
-                            setState(() {
-
-                            });
+                            setState(() {});
                           },
                         ),
                       ],
@@ -73,6 +71,15 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 );
               },
+            ),
+          ),
+          Center(
+            child: TextButton(
+              onPressed: () {
+                Get.toNamed('/screen1', arguments: ['Mohit', 'Sharma']);
+                // Get.to(ScreenOne(title: "Mohit",));
+              },
+              child: Text("Go to Next Screen "),
             ),
           )
         ],
