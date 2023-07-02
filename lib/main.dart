@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:learning_getx/screen_one.dart';
 import 'package:learning_getx/screen_two.dart';
+import 'get_height.dart';
 import 'home_screen.dart';
 
 void main() {
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
         // colorScheme: ColorScheme.fromSeed(seedColor: Colors.purple),
         // useMaterial3: false,
       ),
-      home:  HomeScreen(),
+      home:  GetHeight(),
       getPages: [
         GetPage(name: '/', page: ()=> HomeScreen()),
         GetPage(name: '/screen1', page: ()=> ScreenOne()),
