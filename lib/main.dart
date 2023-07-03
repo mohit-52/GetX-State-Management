@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:learning_getx/state_management/container_eg2.dart';
 import 'package:learning_getx/utils/languages.dart';
 import 'package:learning_getx/state_management/timer_screen.dart';
 
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
         // colorScheme: ColorScheme.fromSeed(seedColor: Colors.purple),
         // useMaterial3: false,
       ),
-      home:  TimerScreen(),
+      home:  ContainerScreen(),
       // getPages: [
       //   GetPage(name: '/', page: ()=> HomeScreen()),
       //   GetPage(name: '/screen1', page: ()=> ScreenOne()),
