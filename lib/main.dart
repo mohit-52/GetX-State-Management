@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:learning_getx/state_management/container_eg2.dart';
 import 'package:learning_getx/state_management/example3_screen.dart';
+import 'package:learning_getx/state_management/example4_Screen.dart';
 import 'package:learning_getx/utils/languages.dart';
 import 'package:learning_getx/state_management/timer_screen.dart';
 
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
         // colorScheme: ColorScheme.fromSeed(seedColor: Colors.purple),
         // useMaterial3: false,
       ),
-      home:  ExampleThreeScreen(),
+      home:  ExampleFourScreen(),
       // getPages: [
       //   GetPage(name: '/', page: ()=> HomeScreen()),
       //   GetPage(name: '/screen1', page: ()=> ScreenOne()),
