@@ -1,17 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:learning_getx/languages.dart';
-import 'package:learning_getx/languages_screen.dart';
-import 'package:learning_getx/screen_one.dart';
-import 'package:learning_getx/screen_two.dart';
-import 'package:shared_preferences/shared_preferences.dart';
-import 'home_screen.dart';
+import 'package:learning_getx/utils/languages.dart';
+import 'package:learning_getx/state_management/timer_screen.dart';
 
 void main()  {
   runApp(const MyApp());
 }
-
-
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -33,12 +27,12 @@ class MyApp extends StatelessWidget {
         // colorScheme: ColorScheme.fromSeed(seedColor: Colors.purple),
         // useMaterial3: false,
       ),
-      home:  LanguagesScreen(),
-      getPages: [
-        GetPage(name: '/', page: ()=> HomeScreen()),
-        GetPage(name: '/screen1', page: ()=> ScreenOne()),
-        GetPage(name: '/screen2', page: ()=> ScreenTwo()),
-      ],
+      home:  TimerScreen(),
+      // getPages: [
+      //   GetPage(name: '/', page: ()=> HomeScreen()),
+      //   GetPage(name: '/screen1', page: ()=> ScreenOne()),
+      //   GetPage(name: '/screen2', page: ()=> ScreenTwo()),
+      // ],
     );
   }
 }

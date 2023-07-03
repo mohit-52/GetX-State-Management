@@ -1,6 +1,5 @@
 
 import 'package:get/get_navigation/src/root/internacionalization.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 class Languages extends Translations{
 

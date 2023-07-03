@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:learning_getx/screen_two.dart';
+import 'package:learning_getx/utils/screen_two.dart';
 class ScreenOne extends StatefulWidget {
   var title;
    ScreenOne({Key? key, this.title = ''}) : super(key: key);
