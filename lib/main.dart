@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:learning_getx/login_api/login_screen.dart';
 import 'package:learning_getx/state_management/container_eg2.dart';
 import 'package:learning_getx/state_management/example3_screen.dart';
 import 'package:learning_getx/state_management/example4_Screen.dart';
@@ -31,7 +32,7 @@ class MyApp extends StatelessWidget {
         // colorScheme: ColorScheme.fromSeed(seedColor: Colors.purple),
         // useMaterial3: false,
       ),
-      home:  ImagePickerScreen(),
+      home:  LoginScreen(),
       // getPages: [
       //   GetPage(name: '/', page: ()=> HomeScreen()),
       //   GetPage(name: '/screen1', page: ()=> ScreenOne()),
